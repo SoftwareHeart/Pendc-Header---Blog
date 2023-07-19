@@ -1,0 +1,788 @@
+ 
+ 
+ * {
+   font-family: 'Rubik', sans-serif;
+
+ }
+
+ body {
+   font-family: "Rubik", sans-serif;
+   color: #1c1b1a;
+   font-size: 18px;
+
+   margin: 0;
+ }
+
+ button:focus {
+   outline: 0;
+ }
+
+ a {
+   text-decoration: none;
+   color: black;
+ }
+
+ li {
+   list-style-type: none;
+ }
+
+ /* Header start */
+
+ .header-sticky {
+   height: 62px !important;
+
+   .contact {
+     display: none;
+   }
+
+   .buttons a {
+     margin-top: 4px;
+   }
+
+   .logo {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     height: 70px;
+     width: 179px;
+     padding: 0 10px;
+   }
+
+   .logo img {
+
+     width: 158px;
+     height: 38px;
+   }
+ }
+
+ .header {
+   width: 100%;
+   background-color: #fff;
+   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+   height: 116px;
+   position: sticky;
+   top: 0;
+   z-index: 10;
+   display: flex;
+   align-items: center;
+ }
+
+ .logo {
+   display: flex;
+   flex: 0.5;
+   align-items: center;
+   justify-content: center;
+   height: 117px;
+   box-shadow: #f27405 10px 0px 10px -10px;
+   padding-left: 10px;
+   padding-right: 10px;
+ }
+
+ .menu-navbar {
+   /* background-color: blue; */
+   flex: 4;
+ }
+
+ .contact {
+   font-size: 16px !important;
+   font-family: "Rubik", sans-serif !important;
+   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+   width: 100%;
+   max-height: 30px;
+   justify-content: end;
+   display: flex;
+   align-items: center;
+   margin-top: 10px;
+   margin-right: auto;
+   order: 2;
+ }
+
+ .contact ul {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 30px;
+   padding-right: 30px;
+   gap: 15px;
+ }
+ .contact li a{
+  font-size: 16px !important;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.5s;
+ }
+ .contact li img{
+  width: 18px;
+    height: 18px;
+ }
+
+ .wrapper {
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row-reverse;
+   height: 100%;
+   width: 100%;
+   order: 1;
+ }
+
+ .navbar {
+   display: flex;
+   align-items: center;
+   font-family: "Rubik", sans-serif;
+   color: #1c1b1a;
+   font-size: 18px;
+ }
+
+ .navbar-items {
+   display: flex;
+   gap: 40px;
+   align-items: center;
+   margin-right: 278px;
+   margin-top: 20px;
+   cursor: pointer;
+   justify-content: flex-start;
+   margin-left: auto;
+ }
+
+ .nav {
+   color: var(#1c1b1a);
+   padding: 8px 15px;
+   border-radius: 5%;
+   display: flex;
+   align-items: center;
+   margin-right: 100px;
+   padding-right: 10px;
+   margin-bottom: 5px;
+ }
+
+ #iletisim-li {
+   text-decoration: underline !important;
+   color: #f27405 !important;
+ }
+
+ .menu-button {
+   display: none;
+   margin-right: -20px;
+ }
+
+ .buttons {
+   display: flex;
+   position: absolute;
+   margin-right: 30px;
+   margin-top: 10px;
+ }
+
+ .buttons a {
+   padding: 15px 30px !important;
+   color: #f27405;
+   border-radius: 5%;
+   margin-top: 4px;
+   cursor: pointer;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+   transition: all ease 0.4s;
+ }
+
+ .menu-button i {
+   font-size: 50px;
+   color: #f27405;
+ }
+
+ /* Header End */
+
+ /* Ana Sayfa start */
+ .blog-wrapper {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+   margin-top: 30px; 
+   color: white;
+ }
+ 
+ .haber-resim img {
+   border-radius: 5%;
+ }
+.ana-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+ .blog {
+   height: auto;
+   width: 100%;
+   display: flex;
+   
+ }
+
+ .ana-sayfa-resim-wrapper {
+   max-width: 980px;
+   width: calc(66.6667% - 10px);
+   height: 538px;
+   padding-top: 27px;
+   border-radius: 3%;
+   display: flex;
+   flex-direction: column;
+    background: rgba(0, 0, 0, .45) url('https://enterprisetalk.com/wp-content/uploads/2021/01/Cloud-Computing-Trends-and-Predictions-for-2021.jpg');
+    background-blend-mode: darken;;
+ }
+
+ .bulut-span {
+   color: blue;
+   font-size: 14px;
+ }
+
+ h5 {
+   color: #1c1b1a;
+ }
+
+ .haber {
+   box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 3px -2px;
+   display: flex;
+   align-items: start; 
+   margin-top: 40px;
+   padding: 0;
+   margin-bottom: 50px;
+   height: 85px;
+   position: relative;
+ }
+
+ .ana-sayfa-sag {
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   width: calc(33.3333% - 10px); /* Genişlik oranı 2/3 */
+ }
+ .slide-wrapper .carousel.no-transition{
+  scroll-behavior: auto;
+}
+ .ana-sayfa-resim-tarih {
+   width: 100%;
+   height: 200px;
+   display: flex;
+   padding-left: 10px;
+   align-items: flex-start;
+   margin-left: 17px;
+ }
+
+ .ana-sayfa-resim {
+   width: 50px;
+   height: 50px;
+   border-radius: 50%
+ }
+
+ .ana-sayfa-tarih {
+   display: flex;
+   flex-direction: column;
+   padding: 10px;
+   margin-top: -3px;
+ }
+
+ .ana-sayfa-resim-baslik {
+   height: auto;
+   width: 100%;
+   padding-left: 20px;
+   padding-top: 35px;
+   margin-left: 12px;
+   display: flex;
+   flex-direction: column;
+   margin-top: 80px;
+ }
+
+ .ana-sayfa-resim-paragraf {
+   height: auto;
+   width: 100%;
+   margin-left: 12px;
+   padding-left: 20px;
+   
+ }
+ 
+ .ana-sayfa-sag-yazi {
+   height: auto;
+ }
+
+ 
+
+ .ana-sayfa-sag-baslik {
+   height: auto;
+   display: inline-flex;
+   flex-direction: column;
+   padding-left: 40px;
+ }
+
+ .haber-baslik span {
+   display: inline-flex;
+   margin-left: 10px;
+ }
+
+ .haber-baslik {
+   display: flex;
+   flex-direction: column
+ }
+
+ .haber-baslik h5 {
+   position: absolute;
+   display: inline-flex;
+   margin-left: 10px;
+ }
+
+ /* Ana Sayfa Son */
+
+
+ /* Slider start */
+ .slider-wrapper-body {
+   display: flex;
+   min-height: 40vh; 
+ }
+
+ 
+.slider-baslik{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  justify-content: start; 
+} 
+ .slide-wrapper i {
+   height: 60px;
+   width: 60px;
+  
+   background-color: white;
+   text-align: center;
+   line-height: 60px;
+   border-radius: 50%;
+   cursor: pointer;
+   position: absolute;
+   top: 50%;
+   opacity: 0.8;
+   transform: translateY(-100%); 
+   font-size: 1.25rem;
+   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+ }
+
+ .slide-wrapper i:first-child {
+   left:-4rem;
+ }
+
+ .slide-wrapper i:last-child {
+   right: -2.9rem;
+ }
+
+ .carousel:where(.card, .img) {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+ }
+
+ .card h2 {
+   font-weight: 500;
+   font-size: .9rem;
+   color: blue;
+   margin: 30px 0 5px;
+ }
+
+ .card span {
+   font-size: .875rem;
+   font-weight: bold;
+ }
+
+ .carousel .card {
+   scroll-snap-align: start;
+   Height: 14rem;
+   width: 14rem;
+   list-style: none;
+   border-radius: 8px;
+   display: flex;
+   padding-bottom: 15px;
+   /* align-items: center;
+   justify-content: center; */
+   /* flex-direction: column; */
+   cursor: pointer;
+ }
+
+ .card .img img {
+   width: 13.125rem;
+   height: 21vh;
+   object-fit: cover;
+   border-radius: 5%;
+ }
+
+ .card .img {
+   display: flex;
+   flex-direction: column;
+ }
+
+ .slide-wrapper {
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center; */
+  
+   position: relative;
+   max-width: 1010px;
+   width: 100%;
+   
+ }
+
+ .slide-wrapper .carousel {
+   display: grid;
+   grid-auto-flow: column;
+   grid-auto-columns: calc((100%/3.84));
+   overflow-x: auto;
+   width: 1000px;
+   scroll-snap-type: x mandatory;
+   scroll-behavior: smooth;
+   scrollbar-width: 0;
+   object-fit: cover;
+ }
+
+ .carousel::-webkit-scrollbar {
+   display: none;
+ }
+
+ .carousel.dragging {
+   scroll-behavior: auto;
+   scroll-snap-type: none;
+ }
+
+ .carousel.dragging .card {
+   cursor: grab;
+   user-select: none;
+ }
+
+ /* Slider end */
+
+/* Menü Start */
+.menu {
+  display: none;
+  transition: all ease 0.5s
+}
+.menu .menu-items li a{
+ font-size: 2.5625rem !important;}
+.menu-open {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding-top: 80px;
+  position: fixed;
+  top: 0;
+  width: 45%;
+  right: 0;
+  height: 100%;
+  background-color: #f27405;
+  transition: right 0.3s ease;
+  color: white;
+  z-index: 30;
+  
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  padding: 20px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.menu-items {
+  list-style: none;
+  padding: 0;
+  margin: 70px 0;
+}
+
+.menu-items li a {
+  color: white;
+  font-size: 30px;
+
+}
+
+.menu-items li {
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.buttons-menu {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 5px;
+  margin-top: -40px;
+}
+
+.info-button,
+.customer-button {
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  color: #f27405;
+  display: block;
+  padding: 15px 140px;
+  text-align: center;
+  background-color: #fff;
+  font-size: 20px;
+}
+
+.info-button:hover,
+.customer-button:hover {
+  background-color: white;
+  color: #333;
+}
+
+/* Menu end*/
+
+ /* Responsive Start*/
+ @media screen and (max-width: 1300px) {
+   .navbar-items {
+     display: none;
+   }
+   .card .img img {
+    width: 17dvw;
+    
+  }
+   .wrapper {
+     min-height: 75px;
+   }
+   .blog-wrapper{
+    align-items: center;
+   }
+   .slide-wrapper .carousel {
+      max-width: 100dvi;;
+     grid-auto-columns: calc((100%/3.82));
+
+   }
+   
+   .menu-button {
+     display: flex;
+   }
+
+
+   .buttons {
+     justify-content: flex-end;
+     margin-left: auto;
+     gap: 20px;
+   }
+
+   .buttons a {
+     padding: 17px 30px;
+   }
+
+ }
+
+ @media screen and (max-width: 1024px) {
+  .ana-sayfa-resim-wrapper{
+    margin-left: 3.8dvw;
+    width: 90%;
+  }
+  .slide-wrapper i:last-child {
+    right: 0rem;
+  }
+  .slider-wrapper-body {
+    margin-left: 5dvw ;
+    width: 100%;
+  }
+  
+  .slide-wrapper{
+   margin-left: 8dvw;
+  }
+  .slide-wrapper .carousel {
+    max-width: 75dvw;
+    grid-auto-columns: calc((100%/3.68));
+  }
+   .slider-baslik{
+    width: 92%;
+  }
+   .card span{
+    font-size: .7rem;
+    height: 1rem;
+    width: 8rem;
+   }
+   .info-button,
+   .customer-button {
+     padding: 15px 80px !important;
+   }
+
+   .buttons-menu {
+     gap: 10px !important;
+
+   }
+
+   .menu-open {
+     padding-top: 0!important;
+   }
+
+   .card .img img {
+     width: 9rem;
+   }
+   .ana-sayfa-sag-yazi {
+     justify-content: start;
+   }
+   .ana-sayfa-sag{
+    width: 92%;
+    margin-top:40px;
+   }
+
+   
+
+   .blog {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: start;
+     
+     
+   }
+
+
+ }
+
+ @media screen and (max-width: 768px) {
+  #mail-icon {
+    font-size: 0 !important;
+  }
+  .menu-open{
+    width: 50%;
+  }
+  .ana-sayfa-resim-wrapper{
+    margin-left: 5dvw;
+    padding-bottom: 30px;
+  }
+  #tel-icon {
+    font-size: 0 !important;
+  }
+   .buttons a {
+     display: none;
+   }
+  
+  
+.slider-baslik{
+  width: 80%;
+}
+   .slider-wrapper-body {
+     align-items: start;
+     margin-left: 5rem;
+   }
+
+   .blog {
+     display: flex;
+     flex-direction: column;
+     align-items: start;
+    
+   }
+
+   .info-button,
+   .customer-button {
+     padding: 15px 60px !important;
+   }
+
+   .buttons-menu {
+     gap: 10px !important;
+
+   }
+
+   .card .img img {
+    width: 27dvw;
+    height: 17dvh;
+  }
+
+   .slide-wrapper .carousel {
+     max-width: 70dvw;
+     grid-auto-columns: calc((100%/1.76));
+   }
+
+   .ana-sayfa-sag-yazi {
+     justify-content: start;
+   }
+   
+ 
+  
+
+ }
+
+ @media screen and (max-width: 468px) {
+   .slide-wrapper .carousel {
+     grid-auto-columns: calc((100%/.80));
+      max-width: 11.25rem;
+   }
+   .menu-open{
+    width: 100% !important;
+   }
+   
+   .slider-wrapper-body {
+     justify-content: center;
+     margin-left: 3dvw;
+     min-height: 70vh;
+   }
+  
+   
+   .card h2 {
+    margin-top: .8rem;
+    font-size: .9rem;
+  }
+  
+
+
+   .info-button,
+   .customer-button {
+     padding: 15px 70px !important;
+   }
+
+   .buttons-menu {
+     gap: 10px !important;
+
+   }
+   .ana-sayfa-resim-wrapper{
+    width: 85%;
+    margin-left: 30px;
+   height: 37.5rem;
+   }
+   .ana-sayfa-sag-baslik{
+    width: 100%;
+   }
+   .card span{
+    font-size: .9rem;
+   }
+   .ana-sayfa-resim-baslik{
+    padding-top: 0;
+   }
+   .ana-sayfa-sag-yazi {
+    
+     justify-content: start !important;
+   }
+
+   .blog {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: start;
+     
+   }
+
+   .menu-items li a {
+
+     font-size: 1.5625rem !important;
+
+   }
+   
+  
+  .carousel .card .img img{
+    width:48dvw !important;
+    height: 20dvh !important;
+    
+  }
+  
+ }
+ 
+
+ /* Responsive end */
+
+ 

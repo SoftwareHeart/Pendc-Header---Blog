@@ -1,0 +1,59 @@
+.slide-wrapper-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slide-container{
+    max-width: 1120px;
+    width: 100%;
+    background-color: bisque;
+    padding: 40px 0;
+  }
+  .slide-content{
+    margin: 0 40px;
+  
+  }
+  .image-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+  }
+  .card{
+    width: 320px;
+    border-radius: 25px;
+    background-color: gray;
+  }
+  .card-image{
+    position: relative;
+    height: 240px;
+    width: 240px;
+  }
+  .card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .image-content{
+    position: relative;
+    row-gap: 5px;
+  
+  }
+  .name{
+    font-size: 18px;
+    color: blue;
+    margin-left: 28px;
+  }
+  .description{
+    font-size: 20px;
+    text-align: center;
+  }
+  .overlay{
+    position: absolute;
+    left: 0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+  }

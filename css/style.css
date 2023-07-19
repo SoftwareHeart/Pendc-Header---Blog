@@ -34,10 +34,7 @@
    .contact {
      display: none;
    }
-
-   .buttons a {
-     margin-top: 4px;
-   }
+   
 
    .logo {
      display: flex;
@@ -178,7 +175,7 @@
    padding: 15px 30px !important;
    color: #f27405;
    border-radius: 5%;
-   margin-top: 4px;
+   margin-top:4px;
    cursor: pointer;
    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -466,10 +463,11 @@
 .menu-open {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: start;
   padding-top: 80px;
   position: fixed;
+  padding-left: 30px;
   top: 0;
   width: 45%;
   right: 0;
@@ -541,10 +539,16 @@
 /* Menu end*/
 
  /* Responsive Start*/
- @media screen and (max-width: 1300px) {
+ @media screen and (max-width: 1280px) {
    .navbar-items {
      display: none;
    }
+   .menu-open{
+    width: 50%;
+   }
+   .slide-wrapper i:last-child {
+    right: -3.76rem;
+  }
    .card .img img {
     width: 17dvw;
     
@@ -595,16 +599,16 @@
    margin-left: 8dvw;
   }
   .slide-wrapper .carousel {
-    max-width: 75dvw;
-    grid-auto-columns: calc((100%/3.68));
+    max-width: 74dvw;
+    grid-auto-columns: calc((100%/2.68));
   }
    .slider-baslik{
     width: 92%;
   }
    .card span{
-    font-size: .7rem;
+    font-size: 1rem;
     height: 1rem;
-    width: 8rem;
+    width: 10rem;
    }
    .info-button,
    .customer-button {
@@ -621,7 +625,9 @@
    }
 
    .card .img img {
-     width: 9rem;
+    width: 23dvw;
+    height: 30dvh;
+     overflow: hidden;
    }
    .ana-sayfa-sag-yazi {
      justify-content: start;
@@ -694,7 +700,10 @@
 
    .card .img img {
     width: 27dvw;
-    height: 17dvh;
+    height: 20dvh;
+  }
+  .card span{
+    width: 90%;
   }
 
    .slide-wrapper .carousel {

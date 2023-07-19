@@ -407,7 +407,7 @@
 
  .card .img img {
    width: 13.125rem;
-   height: 21vh;
+   height: 20vh;
    object-fit: cover;
    border-radius: 5%;
  }
@@ -462,7 +462,7 @@
   transition: all ease 0.5s
 }
 .menu .menu-items li a{
- font-size: 2.5625rem !important;}
+ font-size: 2.15rem !important;}
 .menu-open {
   display: flex;
   flex-direction: column;
@@ -652,6 +652,9 @@
   .menu-open{
     width: 50%;
   }
+  .slide-wrapper i:last-child {
+    right: 3rem;
+  }
   .ana-sayfa-resim-wrapper{
     margin-left: 5dvw;
     padding-bottom: 30px;
@@ -711,12 +714,14 @@
  @media screen and (max-width: 468px) {
    .slide-wrapper .carousel {
      grid-auto-columns: calc((100%/.80));
-      max-width: 11.25rem;
+      max-width: 10rem;
    }
    .menu-open{
     width: 100% !important;
    }
-   
+   .slide-wrapper i:last-child {
+    right: -2.9rem;
+  }
    .slider-wrapper-body {
      justify-content: center;
      margin-left: 3dvw;
@@ -775,9 +780,15 @@
    
   
   .carousel .card .img img{
-    width:48dvw !important;
-    height: 20dvh !important;
+    width: 44dvw !important;
+    height: 24dvh !important;
     
+  }
+  .slider-wrapper-body {
+    margin-left: 0 !important;
+  }
+  .slide-wrapper {
+    margin-left: 0 !important;
   }
   
  }

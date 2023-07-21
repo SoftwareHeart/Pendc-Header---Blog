@@ -1,4 +1,5 @@
-.slide-wrapper-body{
+/* .slide-wrapper-body{
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,4 +57,33 @@
     height: 100%;
     width: 100%;
     background-color: aliceblue;
+  } */
+
+  .trendler-grid {
+    display: grid;
+    grid-template-columns: 800px repeat(4, 200px);
+    grid-gap: 20px;
   }
+  
+  .buyuk-haber,
+  .kucuk-haber {
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  .buyuk-haber img,
+  .kucuk-haber img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .buyuk-haber h3,
+  .kucuk-haber h3 {
+    margin-top: 10px;
+  }
+  
+  .buyuk-haber p,
+  .kucuk-haber p {
+    margin-top: 5px;
+  }
+  

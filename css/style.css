@@ -1,465 +1,554 @@
- 
- 
- * {
-   font-family: 'Rubik', sans-serif;
+* {
+  font-family: "Rubik", sans-serif;
+}
 
- }
+body {
+  font-family: "Rubik", sans-serif;
+  color: #1c1b1a;
+  font-size: 18px;
 
- body {
-   font-family: "Rubik", sans-serif;
-   color: #1c1b1a;
-   font-size: 18px;
-
-   margin: 0;
- }
-
- button:focus {
-   outline: 0;
- }
-
- a {
-   text-decoration: none;
-   color: black;
- }
-
- li {
-   list-style-type: none;
- }
-
- /* Header start */
-
- .header-sticky {
-   height: 62px !important;
-
-   .contact {
-     display: none;
-   }
-   
-
-   .logo {
-     display: flex;
-     flex-direction: row;
-     align-items: center;
-     justify-content: center;
-     height: 70px;
-     width: 179px;
-     padding: 0 10px;
-   }
-
-   .logo img {
-
-     width: 158px;
-     height: 38px;
-   }
- }
-
- .header {
-   width: 100%;
-   background-color: #fff;
-   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
-   height: 116px;
-   position: sticky;
-   top: 0;
-   z-index: 10;
-   display: flex;
-   align-items: center;
- }
-
- .logo {
-   display: flex;
-   flex: 0.5;
-   align-items: center;
-   justify-content: center;
-   height: 117px;
-   box-shadow: #f27405 10px 0px 10px -10px;
-   padding-left: 10px;
-   padding-right: 10px;
- }
-
- .menu-navbar {
-   /* background-color: blue; */
-   flex: 4;
- }
-
- .contact {
-   font-size: 16px !important;
-   font-family: "Rubik", sans-serif !important;
-   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
-   width: 100%;
-   max-height: 30px;
-   justify-content: end;
-   display: flex;
-   align-items: center;
-   margin-top: 10px;
-   margin-right: auto;
-   order: 2;
- }
-
- .contact ul {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-bottom: 30px;
-   padding-right: 30px;
-   gap: 15px;
- }
- .contact li a{
-  font-size: 16px !important;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    transition: all 0.5s;
- }
- .contact li img{
-  width: 18px;
-    height: 18px;
- }
-
- .wrapper {
-   display: flex;
-   justify-content: space-between;
-   flex-direction: row-reverse;
-   height: 100%;
-   width: 100%;
-   order: 1;
- }
-
- .navbar {
-   display: flex;
-   align-items: center;
-   font-family: "Rubik", sans-serif;
-   color: #1c1b1a;
-   font-size: 18px;
- }
-
- .navbar-items {
-   display: flex;
-   gap: 40px;
-   align-items: center;
-   margin-right: 278px;
-   margin-top: 20px;
-   cursor: pointer;
-   justify-content: flex-start;
-   margin-left: auto;
- }
-
- .nav {
-   color: var(#1c1b1a);
-   padding: 8px 15px;
-   border-radius: 5%;
-   display: flex;
-   align-items: center;
-   margin-right: 100px;
-   padding-right: 10px;
-   margin-bottom: 5px;
- }
-
- #iletisim-li {
-   text-decoration: underline !important;
-   color: #f27405 !important;
- }
-
- .menu-button {
-   display: none;
-   margin-right: -20px;
- }
-
- .buttons {
-   display: flex;
-   position: absolute;
-   margin-right: 30px;
-   margin-top: 10px;
- }
-
- .buttons a {
-   padding: 15px 30px !important;
-   color: #f27405;
-   border-radius: 5%;
-   margin-top:4px;
-   cursor: pointer;
-   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-   transition: all ease 0.4s;
- }
-
- .menu-button i {
-   font-size: 50px;
-   color: #f27405;
- }
-
- /* Header End */
-
- /* Ana Sayfa start */
- .blog-wrapper {
+  margin: 0;
+}
+.container{
   display: flex;
-  flex-direction: column;
-  /* align-items: center;
-  justify-content: center; */
-   margin-top: 30px; 
-   color: white;
- }
- 
- .haber-resim img {
-   border-radius: 5%;
- }
-.ana-wrapper{
+  align-items: center;
+  justify-content: center;
+}
+button:focus {
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* Header start */
+
+.header-sticky {
+  height: 62px !important;
+
+  .contact {
+    display: none;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 179px;
+    padding: 0 10px;
+  }
+
+  .logo img {
+    width: 158px;
+    height: 38px;
+  }
+}
+
+.header {
+  position: sticky;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  height: 116px;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  transform: 1s ease-in-out;
+}
+
+.logo {
+  display: flex;
+  flex: 0.5;
+  align-items: center;
+  justify-content: center;
+  height: 117px;
+  box-shadow: #f27405 10px 0px 10px -10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.menu-navbar {
+  /* background-color: blue; */
+  flex: 4;
+}
+
+.contact {
+  font-size: 16px !important;
+  font-family: "Rubik", sans-serif !important;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  width: 100%;
+  max-height: 30px;
+  justify-content: end;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-right: auto;
+  order: 2;
+}
+
+.contact ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-right: 30px;
+  gap: 15px;
+}
+.contact li a{
+  font-size: 16px !important;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.5s;
+}
+.contact li img {
+  width: 18px;
+  height: 18px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  height: 100%;
+  width: 100%;
+  order: 1;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  font-family: "Rubik", sans-serif;
+  color: #1c1b1a;
+  font-size: 18px;
+}
+
+.navbar-items {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-right: 278px;
+  margin-top: 20px;
+  cursor: pointer;
+  justify-content: flex-start;
+  margin-left: auto;
+}
+
+.nav {
+  color: var(#1c1b1a);
+  padding: 8px 15px;
+  border-radius: 5%;
+  display: flex;
+  align-items: center;
+  margin-right: 100px;
+  padding-right: 10px;
+  margin-bottom: 5px;
+}
+
+#iletisim-li {
+  text-decoration: underline !important;
+  color: #f27405 !important;
+}
+
+.menu-button {
+  display: none;
+  margin-right: -10px;
+}
+
+.buttons {
+  display: flex;
+  position: absolute;
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
+.buttons a {
+  padding: 15px 30px !important;
+  color: #f27405;
+  border-radius: 5%;
+  margin-top: 4px;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: all ease 0.4s;
+}
+
+.menu-button i {
+  font-size: 50px;
+  color: #f27405;
+}
+
+/* Header End */
+
+/* Ana Sayfa start */
+.blog-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  max-width: 1100px;
+  margin-top: 30px;
+  color: white;
+}
+
+.haber-resim img {
+  border-radius: 5%;
+}
+
+.blog {
+  height: auto;
+  width: 100%;
+  display: flex;
+}
+
+.ana-sayfa-resim-wrapper {
   
-}
- .blog {
-   height: auto;
-   width: 100%;
-   display: flex;
-   
- }
-
- .ana-sayfa-resim-wrapper {
-   max-width: 980px;
-   width: calc(66.6667% - 10px);
-   height: 538px;
-   padding-top: 27px;
-   border-radius: 3%;
-   display: flex;
-   flex-direction: column;
-    background: rgba(0, 0, 0, .45) url('https://enterprisetalk.com/wp-content/uploads/2021/01/Cloud-Computing-Trends-and-Predictions-for-2021.jpg');
-    background-blend-mode: darken;;
- }
-
- .bulut-span {
-   color: blue;
-   font-size: 14px;
- }
-
- h5 {
-   color: #1c1b1a;
- }
-
- .haber {
-   box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 3px -2px;
-   display: flex;
-   align-items: start; 
-   margin-top: 40px;
-   padding: 0;
-   margin-bottom: 50px;
-   height: 85px;
-   position: relative;
- }
-
- .ana-sayfa-sag {
-   width: 100%;
-   height: auto;
-   display: flex;
-   flex-direction: column;
-   width: calc(33.3333% - 10px); /* Genişlik oranı 2/3 */
- }
- .slide-wrapper .carousel.no-transition{
-  scroll-behavior: auto;
-}
- .ana-sayfa-resim-tarih {
-   width: 100%;
-   height: 200px;
-   display: flex;
-   padding-left: 10px;
-   align-items: flex-start;
-   margin-left: 17px;
- }
-
- .ana-sayfa-resim {
-   width: 50px;
-   height: 50px;
-   border-radius: 50%
- }
-
- .ana-sayfa-tarih {
-   display: flex;
-   flex-direction: column;
-   padding: 10px;
-   margin-top: -3px;
- }
-
- .ana-sayfa-resim-baslik {
-   height: auto;
-   width: 100%;
-   padding-left: 20px;
-   padding-top: 35px;
-   margin-left: 12px;
-   display: flex;
-   flex-direction: column;
-   margin-top: 80px;
- }
-
- .ana-sayfa-resim-paragraf {
-   height: auto;
-   width: 100%;
-   margin-left: 12px;
-   padding-left: 20px;
-   
- }
- 
- .ana-sayfa-sag-yazi {
-   height: auto;
- }
-
- 
-
- .ana-sayfa-sag-baslik {
-   height: auto;
-   display: inline-flex;
-   flex-direction: column;
-   padding-left: 40px;
- }
-
- .haber-baslik span {
-   display: inline-flex;
-   margin-left: 10px;
- }
-
- .haber-baslik {
-   display: flex;
-   flex-direction: column
- }
-
- .haber-baslik h5 {
-   position: absolute;
-   display: inline-flex;
-   margin-left: 10px;
- }
-
- /* Ana Sayfa Son */
-
-
- /* Slider start */
- .slider-wrapper-body {
-   display: flex;
-   min-height: 40vh; 
- }
-
- 
-.slider-baslik{
+  width: calc(66.6667% - 10px);
+  height: 538px;
+  padding-top: 27px;
+  border-radius: 3%;
   display: flex;
   flex-direction: column;
+  background: rgba(0, 0, 0, 0.45)
+    url("https://enterprisetalk.com/wp-content/uploads/2021/01/Cloud-Computing-Trends-and-Predictions-for-2021.jpg");
+  background-blend-mode: darken;
+}
+
+.bulut-span {
+  color: blue;
+  font-size: 14px;
+}
+
+h2,
+h5 {
+  color: #1c1b1a;
+}
+
+.ana-sayfa-sag-baslik h2 {
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+.haber {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 3px -2px;
+  width: 108%;
+  display: flex;
   align-items: start;
+  justify-content: start;
+  margin-top: 20px;
+  padding: 0;
+  margin-bottom: 56.5px;
+  height: 81px;
+  position: relative;
+}
+
+.ana-sayfa-sag {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  width: calc(39.3333% - 10px); /* Genişlik oranı 2/3 */
+}
+.ana-sayfa-resim-tarih {
   width: 100%;
-  justify-content: start; 
-} 
- .slide-wrapper i {
-   height: 60px;
-   width: 60px;
+  height: 200px;
+  display: flex;
+  padding-left: 10px;
+  align-items: flex-start;
+  margin-left: 17px;
+}
+
+.ana-sayfa-resim {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.ana-sayfa-tarih {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: -3px;
+}
+
+.ana-sayfa-resim-baslik {
+  height: auto;
+  width: 100%;
+  padding-left: 20px;
+  padding-top: 35px;
+  margin-left: 12px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+.ana-sayfa-resim-paragraf {
+  height: auto;
+  width: 100%;
+  width: 70%;
+  padding-top: 15px;
+}
+
+.ana-sayfa-sag-baslik {
+  height: 30px;
+  display: inline-flex;
+  flex-direction: column;
+  padding-left: 40px;
+}
+
+.haber-baslik span {
+  display: inline-flex;
+  margin-left: 10px;
+}
+
+.haber-baslik {
+  display: flex;
+  flex-direction: column;
+}
+
+.haber-baslik h5 {
+  position: absolute;
+  display: inline-flex;
+  margin-left: 10px;
+}
+
+/* Ana Sayfa Son */
+
+/* Slider start */
+.slider-wrapper-body {
+  display: flex;
+  flex-direction: column;
+  padding: 0 35px;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+}
+.slide-baslik-h2{
+  margin-top: 0;
+}
+.slide-baslik-span{
+  color: #6A6D78;
+  font-size: 1rem;
+}
+.slide-wrapper {
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
+}
+.slide-wrapper i {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+  z-index: 9;
+}
+.slide-wrapper i:active{
+  transform: translateY(-50%) scale(0.85);
+}
+.slide-wrapper i:first-child{
+  left: -26px;
+}
+.slide-wrapper i:last-child{
+  right: -26px;
+}
+.slide-wrapper .carousel{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 4));
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .card {
+  scroll-snap-align: start;
+  height: 312px;
+  list-style: none;
+  border: 1px solid #e1e1e1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; 
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+}
+.card .img :hover{
+  transform: translateY(-5px);
+}
+.carousel .card .img {
+  border-radius: 5%;
+}
+.card .img img {
+  width: 250px;
+  height:190px;
+  border-radius: 5%;
+  object-fit: cover;
+  border: 4px solid #fff;
+}
+.carousel .card h2 {
+  font-weight: 500;
+  width: 200px;
+  font-size: 1.56rem;
+  margin: 5px 0 5px;
+  text-align: center;
+}
+.carousel .card span {
+  color: #6A6D78;
+ padding-top: 15px;
+  font-size: 1.31rem;
+  margin-top: 0px;
+}
+
+/* Slider end */
+
+/*! Trend Haber Start */
+
+.trend-haberler-wrapper {
+  width: 1120px;
+  height: auto;
+  margin-top: 30px;
+}
+
+.trend-haberler-baslik {
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.trend-haberler-baslik h2 {
+  margin: 0;
   
-   background-color: white;
-   text-align: center;
-   line-height: 60px;
-   border-radius: 50%;
-   cursor: pointer;
-   position: absolute;
-   top: 50%;
-   opacity: 0.8;
-   transform: translateY(-100%); 
-   font-size: 1.25rem;
-   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
- }
+}
 
- .slide-wrapper i:first-child {
-   left:-4rem;
- }
-
- .slide-wrapper i:last-child {
-   right: -2.9rem;
- }
-
- .carousel:where(.card, .img) {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-
- }
-
- .card h2 {
-   font-weight: 500;
-   font-size: .9rem;
-   color: blue;
-   margin: 30px 0 5px;
- }
-
- .card span {
-   font-size: .875rem;
-   font-weight: bold;
- }
-
- .carousel .card {
-   scroll-snap-align: start;
-   Height: 14rem;
-   width: 14rem;
-   list-style: none;
-   border-radius: 8px;
-   display: flex;
-   padding-bottom: 15px;
-   /* align-items: center;
-   justify-content: center; */
-   /* flex-direction: column; */
-   cursor: pointer;
- }
-
- .card .img img {
-   width: 13.125rem;
-   height: 20vh;
-   object-fit: cover;
-   border-radius: 5%;
- }
-
- .card .img {
-   display: flex;
-   flex-direction: column;
- }
-
- .slide-wrapper {
-  /* display: flex;
+.trend-haberler {
+  display: flex;
+}
+.buyuk-haber {
+  width: 50dvw;
+  height: 25.65rem;
+  background: rgba(0, 0, 0, 0.25)
+    url(https://www.keyofchange.com/UPLOAD/URUN/1920/bulut-10070652498.jpg);
+  border-radius: 3%;
+  background-blend-mode: darken;
+  background-size: cover;
+  padding: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+.buyuk-haber-baslik {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+}
+.buyuk-haber-baslik h2 {
+  width: 70%;
+}
+.buyuk-haber-baslik span {
+  margin-bottom: 5px;
+}
+.trend-haberler .kucuk-haberler {
+  width: 50dvw;
+  height: 81.68dvh;
+}
+.kucuk-haberler .kucuk-haber-row-1,
+.kucuk-haber-row-2 {
+  display: flex;
+  height: 17rem;
   flex-direction: row;
-  justify-content: center; */
-  
-   position: relative;
-   max-width: 1010px;
-   width: 100%;
-   
- }
+  width: auto;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+.kucuk-haberler .kucuk-haber-row-1 {
+  /* Todo  */
+  margin-bottom: -35px;
+}
 
- .slide-wrapper .carousel {
-   display: grid;
-   grid-auto-flow: column;
-   grid-auto-columns: calc((100%/3.84));
-   overflow-x: auto;
-   width: 1000px;
-   scroll-snap-type: x mandatory;
-   scroll-behavior: smooth;
-   scrollbar-width: 0;
-   object-fit: cover;
- }
-
- .carousel::-webkit-scrollbar {
-   display: none;
- }
-
- .carousel.dragging {
-   scroll-behavior: auto;
-   scroll-snap-type: none;
- }
-
- .carousel.dragging .card {
-   cursor: grab;
-   user-select: none;
- }
-
- /* Slider end */
+.kucuk-haber {
+  height: 12rem;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.25)
+    url(https://www.keyofchange.com/UPLOAD/URUN/1920/bulut-10070652498.jpg);
+  border-radius: 3%;
+  background-blend-mode: darken;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 15px;
+  cursor: pointer;
+  position: relative;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  -moz-transform: scale(1);
+  transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+}
+.kucuk-haber:hover {
+  z-index: 2;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.kucuk-haber h2 {
+  font-size: medium;
+}
+.kucuk-haber:nth-child(1) {
+  margin-right: 20px;
+}
+/*! Trend Haber End */
 
 /* Menü Start */
 .menu {
   display: none;
-  transition: all ease 0.5s
+  transition: all ease 0.5s;
 }
-.menu .menu-items li a{
- font-size: 2.15rem !important;}
+.menu .menu-items li a {
+  font-size: 2.15rem !important;
+}
 .menu-open {
   display: flex;
   flex-direction: column;
@@ -476,7 +565,6 @@
   transition: right 0.3s ease;
   color: white;
   z-index: 30;
-  
 }
 
 .close-button {
@@ -500,11 +588,9 @@
 .menu-items li a {
   color: white;
   font-size: 30px;
-
 }
 
 .menu-items li {
-
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -538,271 +624,274 @@
 
 /* Menu end*/
 
- /* Responsive Start*/
- @media screen and (max-width: 1280px) {
-   .navbar-items {
-     display: none;
-   }
-   .menu-open{
+/* Responsive Start*/
+@media screen and (max-width: 1280.99px) {
+  
+  
+  .navbar-items {
+    display: none;
+  }
+  .menu-open {
     width: 50%;
-   }
-   .slide-wrapper i:last-child {
-    right: -3.76rem;
   }
-   .card .img img {
-    width: 17dvw;
-    
+  
+  .haber {
+    width: 105%;
   }
-   .wrapper {
-     min-height: 75px;
-   }
-   .blog-wrapper{
-    align-items: center;
-   }
-   .slide-wrapper .carousel {
-      max-width: 100dvi;;
-     grid-auto-columns: calc((100%/3.82));
-
-   }
-   
-   .menu-button {
-     display: flex;
-   }
-
-
-   .buttons {
-     justify-content: flex-end;
-     margin-left: auto;
-     gap: 20px;
-   }
-
-   .buttons a {
-     padding: 17px 30px;
-   }
-
- }
-
- @media screen and (max-width: 1024px) {
-  .ana-sayfa-resim-wrapper{
-    margin-left: 3.8dvw;
-    width: 90%;
+  
+  .wrapper {
+    min-height: 75px;
   }
-  .slide-wrapper i:last-child {
-    right: 0rem;
+ 
+  
+ 
+  .menu-button {
+    display: flex;
   }
-  .slider-wrapper-body {
-    margin-left: 5dvw ;
+
+  .buttons {
+    justify-content: flex-end;
+    margin-left: auto;
+    gap: 20px;
+  }
+
+  .buttons a {
+    padding: 17px 30px;
+  }
+}
+@media screen and (max-width: 1100px) {
+ 
+  .slide-wrapper .carousel {
+    grid-auto-columns: calc((100% / 3) + 5px);
+  }
+}
+@media screen and (max-width: 1024px) {
+  
+  body {
+    overflow-x: hidden;
+  }
+  .ana-sayfa-resim-wrapper {
     width: 100%;
   }
   
-  .slide-wrapper{
-   margin-left: 8dvw;
+  .kucuk-haberler .kucuk-haber-row-1,
+  .kucuk-haber-row-2 {
+    width: 99dvw;
+    height: 17.8125rem;
+    margin-left: 0 !important;
   }
+  .trend-haberler-wrapper {
+    width: 100%;
+    height: 150vh;
+  }
+  .trend-haberler {
+    flex-direction: column;
+  }
+  .kucuk-haberler {
+    margin-top: 1rem;
+    width: 100% !important;
+  }
+  .kucuk-haber h2 {
+    width: 60% !important;
+    padding: 0px !important;
+  }
+  .buyuk-haber {
+    width: 94dvw;
+    height: 60dvw;
+  }
+
+  .info-button,
+  .customer-button {
+    padding: 15px 80px !important;
+  }
+
+  .buttons-menu {
+    gap: 10px !important;
+  }
+
+  .menu-open {
+    padding-top: 0 !important;
+  }
+  
+  .ana-sayfa-sag-yazi {
+    justify-content: start;
+  }
+  .ana-sayfa-sag {
+    width: 100%;
+    margin-top: 40px;
+    margin-left: -26px !important;
+  }
+
+  .blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+}
+
+@media screen and (max-width: 900px) {
+ 
   .slide-wrapper .carousel {
-    max-width: 74dvw;
-    grid-auto-columns: calc((100%/2.68));
+    grid-auto-columns: calc((100% / 2) + 5px);
   }
-   .slider-baslik{
-    width: 92%;
-  }
-   .card span{
-    font-size: 1rem;
-    height: 1rem;
-    width: 10rem;
-   }
-   .info-button,
-   .customer-button {
-     padding: 15px 80px !important;
-   }
-
-   .buttons-menu {
-     gap: 10px !important;
-
-   }
-
-   .menu-open {
-     padding-top: 0!important;
-   }
-
-   .card .img img {
-    width: 23dvw;
-    height: 30dvh;
-     overflow: hidden;
-   }
-   .ana-sayfa-sag-yazi {
-     justify-content: start;
-   }
-   .ana-sayfa-sag{
-    width: 92%;
-    margin-top:40px;
-   }
-
-   
-
-   .blog {
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: start;
-     
-     
-   }
-
-
- }
-
- @media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 768px) {
   #mail-icon {
     font-size: 0 !important;
   }
-  .menu-open{
+  .menu-open {
     width: 50%;
   }
-  .slide-wrapper i:last-child {
-    right: 3rem;
+  .buyuk-haber {
+    height: 50vh;
+    width: 93%;
   }
-  .ana-sayfa-resim-wrapper{
-    margin-left: 5dvw;
+  .kucuk-haberler {
+    width: 100dvw !important;
+  }
+  .ana-sayfa-resim-wrapper {
     padding-bottom: 30px;
   }
   #tel-icon {
     font-size: 0 !important;
   }
-   .buttons a {
-     display: none;
-   }
-  
-  
-.slider-baslik{
-  width: 80%;
+  .buttons a {
+    display: none;
+  }
+
+ 
+
+  .blog {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .info-button,
+  .customer-button {
+    padding: 15px 60px !important;
+  }
+
+  .buttons-menu {
+    gap: 10px !important;
+  }
+  .ana-sayfa-sag-yazi {
+    justify-content: start;
+  }
 }
-   .slider-wrapper-body {
-     align-items: start;
-     margin-left: 5rem;
-   }
 
-   .blog {
-     display: flex;
-     flex-direction: column;
-     align-items: start;
-    
-   }
-
-   .info-button,
-   .customer-button {
-     padding: 15px 60px !important;
-   }
-
-   .buttons-menu {
-     gap: 10px !important;
-
-   }
-
-   .card .img img {
-    width: 27dvw;
-    height: 20dvh;
+@media screen and (max-width: 600px) {
+  .slide-wrapper .carousel {
+    grid-auto-columns: calc((100% / 1) + 45px);
   }
-  .card span{
-    width: 90%;
+}
+@media screen and (max-width: 568px) {
+  .buyuk-haber {
+    width: 88%;
   }
-
-   .slide-wrapper .carousel {
-     max-width: 70dvw;
-     grid-auto-columns: calc((100%/1.76));
-   }
-
-   .ana-sayfa-sag-yazi {
-     justify-content: start;
-   }
-   
- 
-  
-
- }
-
- @media screen and (max-width: 468px) {
-   .slide-wrapper .carousel {
-     grid-auto-columns: calc((100%/.80));
-      max-width: 10rem;
-   }
-   .menu-open{
-    width: 100% !important;
-   }
-   .slide-wrapper i:last-child {
-    right: -2.9rem;
-  }
-   .slider-wrapper-body {
-     justify-content: center;
-     margin-left: 3dvw;
-     min-height: 70vh;
-   }
-  
-   
-   .card h2 {
-    margin-top: .8rem;
-    font-size: .9rem;
+  .carousel .card{
+    width: 340px;
   }
   
-
-
-   .info-button,
-   .customer-button {
-     padding: 15px 70px !important;
-   }
-
-   .buttons-menu {
-     gap: 10px !important;
-
-   }
-   .ana-sayfa-resim-wrapper{
-    width: 85%;
-    margin-left: 30px;
-   height: 37.5rem;
-   }
-   .ana-sayfa-sag-baslik{
+  .buyuk-haber h2 {
+    font-size: 1.5rem;
     width: 100%;
-   }
-   .card span{
-    font-size: .9rem;
-   }
-   .ana-sayfa-resim-baslik{
+  }
+  .kucuk-haber h2 {
+    font-size: 1rem;
+    width: 200px !important;
+  }
+  .kucuk-haberler .kucuk-haber-row-1,
+  .kucuk-haber-row-2 {
+    width: 91%;
+    height: 60vh;
+    margin-bottom: -1px;
+    margin-left: 20px;
+    flex-direction: column;
+  }
+  .trend-haberler-baslik {
+    margin-left: 2px;
+  }
+  .trend-haberler-wrapper {
+    width: 100%;
+    height: 200vh;
+    margin-left: 14px;
+  }
+  .slide-baslik-h2{
+    font-size: 1.5rem;
+  }
+  .trend-haberler-baslik h2 {
+    font-size: 1.5rem;
+  }
+  .trend-haberler {
+    height: 200vh;
+  }
+  .kucuk-haberler {
+    margin-top: 10px;
+  }
+  .kucuk-haber {
+    height: 30vh;
+    width: 102%;
+    padding-bottom: 0px !important;
+  }
+ 
+ 
+  .menu-open {
+    width: 100% !important;
+  }
+  
+
+  .info-button,
+  .customer-button {
+    padding: 15px 70px !important;
+  }
+
+  .buttons-menu {
+    gap: 10px !important;
+  }
+  .ana-sayfa-resim-wrapper{
+    width: 96%;
+    margin-left: 10px;
+  }
+
+  .menu-items li a {
+    font-size: 1.5625rem !important;
+  }
+  
+
+ 
+}
+@media screen and (max-width: 414.99px) {
+  .carousel .card{
+    width: 18.75rem;
+  }
+  .ana-sayfa-resim-baslik{
+    margin-top: 15px;
     padding-top: 0;
-   }
-   .ana-sayfa-sag-yazi {
-    
-     justify-content: start !important;
-   }
-
-   .blog {
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: start;
-     
-   }
-
-   .menu-items li a {
-
-     font-size: 1.5625rem !important;
-
-   }
-   
-  
-  .carousel .card .img img{
-    width: 44dvw !important;
-    height: 24dvh !important;
-    
   }
-  .slider-wrapper-body {
-    margin-left: 0 !important;
+  .ana-sayfa-resim-tarih{
+    height: 100px;
   }
-  .slide-wrapper {
-    margin-left: 0 !important;
+  .ana-sayfa-resim-paragraf{
+    margin-top: 150px;
   }
-  
- }
- 
+  .buyuk-haber {
+    width: 82dvw;
+    height: 60vh;
+    margin-top: 15px;
+  }
+  .kucuk-haberler .kucuk-haber-row-1,
+  .kucuk-haber-row-2 {
+    width: 86dvw;
+  }
 
- /* Responsive end */
-
- 
+  .kucuk-haber h2 {
+    font-size: 0.9rem;
+  }
+  .kucuk-haber {
+    height: 35vh;
+    margin-top: 0.625rem;
+  }
+}
+/* Responsive end */

@@ -194,7 +194,7 @@ li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 1200px;
+  width: 1200px;
   margin-top: 30px;
   color: white;
 }
@@ -210,7 +210,7 @@ li {
 }
 
 .ana-sayfa-resim-wrapper {
-  width: calc(66.6667% - 10px);
+  width: 800px;
   height: 538px;
   padding-top: 27px;
   border-radius: 3%;
@@ -237,7 +237,7 @@ h5 {
 }
 .haber {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 3px -2px;
-  width: 108%;
+  
   display: flex;
   align-items: start;
   justify-content: start;
@@ -252,7 +252,7 @@ h5 {
   height: auto;
   display: flex;
   flex-direction: column;
-  width: calc(39.3333% - 10px); /* Genişlik oranı 2/3 */
+  width: 400px; /* Genişlik oranı 2/3 */
 }
 .ana-sayfa-resim-tarih {
   width: 100%;
@@ -283,7 +283,7 @@ h5 {
   margin-left: 12px;
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
+  margin-top: 118px;
 }
 
 .ana-sayfa-resim-paragraf {
@@ -327,7 +327,7 @@ h5 {
   min-height: 50vh;
 }
 .slide-baslik-h2 {
-  margin-top: 0;
+  margin-top: 8px !important;
 }
 .slide-baslik-span {
   color: #6a6d78;
@@ -388,7 +388,7 @@ h5 {
   cursor: grab;
   user-select: none;
 }
- 
+
 .carousel .card {
   scroll-snap-align: start;
   height: 19.125rem;
@@ -400,11 +400,10 @@ h5 {
   padding-bottom: 15px;
   flex-direction: column;
   border-radius: 8px;
-  
 }
 .carousel .card .img:hover {
   transform: translateY(-2px);
-} 
+}
 .carousel .img {
   border-radius: 5%;
 }
@@ -420,13 +419,13 @@ h5 {
   width: 100%;
   font-size: 1.45rem;
   margin: 5px 0 5px;
-  margin-left: .1625rem;
+  margin-left: 0.1625rem;
 }
 .carousel .card span {
   color: blue;
   padding-top: 15px;
   text-align: start;
-  margin-left: .1625rem;
+  margin-left: 0.1625rem;
   font-size: 1.31rem;
   margin-top: 0px;
 }
@@ -434,84 +433,35 @@ h5 {
 /* Slider end */
 
 /*! Trend Haber Start */
-
-.trend-haberler-wrapper {
-  width: 1200px;
-  height: 72vh;
-  margin-top: 30px;
-}
-
 .trend-haberler-baslik {
-  display: flex;
-  flex-direction: column;
-  height: 50px;
-  margin-bottom: 20px;
+  margin-top: 40px;
 }
-
-.trend-haberler-baslik h2 {
-  margin: 0;
+.trend-haberler-baslik h2{
+  margin-top: 8px;
 }
-
-.trend-haberler {
-  display: flex;
+.trend-haber-wrapper {
+  width: 1200px;
+  height: auto;
+  margin-top: 10px;
 }
-.buyuk-haber {
-  width: 50dvw;
-  height: 25.65rem;
+.trend-haber-grid {
+  width: 76.125rem;
+  display: grid;
+  grid-template-columns: 4fr 2fr 2fr;
+  grid-template-rows: repeat(4, 8rem);
+  grid-auto-flow: column;
+  gap: 20px;
+}
+.trend-haber-grid .trend-grid-item {
+  background-color: #f27405;
+  padding: 20px 20px 0px 20px;
   background: rgba(0, 0, 0, 0.25)
     url(https://www.keyofchange.com/UPLOAD/URUN/1920/bulut-10070652498.jpg);
-  border-radius: 3%;
   background-blend-mode: darken;
   background-size: cover;
-  padding: 25px;
-  background-repeat: no-repeat;
   background-position: center;
-  cursor: pointer;
-}
-.buyuk-haber-baslik {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  justify-content: center;
-}
-.buyuk-haber-baslik h2 {
-  width: 70%;
-}
-.buyuk-haber-baslik span {
-  margin-bottom: 5px;
-}
-.trend-haberler .kucuk-haberler {
-  width: 50dvw;
-  height: 81.68dvh;
-}
-.kucuk-haberler .kucuk-haber-row-1,
-.kucuk-haber-row-2 {
-  display: flex;
-  height: 17rem;
-  flex-direction: row;
-  width: auto;
-  justify-content: space-between;
-  margin-left: 20px;
-}
-.kucuk-haberler .kucuk-haber-row-1 {
-  /* Todo  */
-  margin-bottom: -35px;
-}
-
-.kucuk-haber {
-  height: 12rem;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.25)
-    url(https://www.keyofchange.com/UPLOAD/URUN/1920/bulut-10070652498.jpg);
   border-radius: 3%;
-  background-blend-mode: darken;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 15px;
   cursor: pointer;
-  position: relative;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   -moz-transform: scale(1);
@@ -520,72 +470,107 @@ h5 {
   -webkit-transition: all 0.3s ease-in;
   -ms-transition: all 0.3s ease-in;
 }
-.kucuk-haber:hover {
+.trend-haber-grid .trend-grid-item:hover{
   z-index: 2;
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
   -moz-transform: scale(1.05);
   transform: scale(1.05);
 }
-.kucuk-haber h2 {
-  font-size: medium;
+.trend-grid-item:first-child {
+  grid-area: 1 / 1 / 5 / 2;
+  padding-bottom: 0px ;
 }
-.kucuk-haber:nth-child(1) {
-  margin-right: 20px;
+.trend-grid-item:nth-child(2) {
+  grid-area: 1 / 2 / 3 / 2;
 }
+.trend-grid-item:nth-child(3) {
+  grid-area: 3 / 2 / 5 / 3;
+}
+.trend-grid-item:nth-child(4) {
+  grid-area: 1 / 3 / 3 / 4;
+}
+.trend-grid-item:nth-child(5) {
+  grid-area: 3 / 3 / 5 / 4;
+  margin-left: 0;
+}
+.trend-grid-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5%;
+}
+.trend-grid-item-yazi {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.trend-grid-item-yazi h2 {
+  margin-top: 5px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+}
+.trend-grid-item-yazi span {
+  color: blue;
+}
+.trend-grid-item-yazi img {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+}
+
 /*! Trend Haber End */
 
 /*! Ayın Yazıları Start */
 .ayin-yazilari-wrapper {
   width: 1200px;
   height: auto;
-  margin-top: 0px;
+  margin-top: 10px;
 }
-.ayin-yazilari-grid{
+.ayin-yazilari-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3,5rem);
+  grid-template-rows: repeat(3, 5rem);
+  grid-auto-flow: column;
   gap: 1.875rem;
-  
-  margin-top: 25px;
 }
-.ayin-yazilari-grid .grid-item{
+.ayin-yazilari-grid .grid-item {
   display: flex;
   align-items: center;
   padding-left: 0;
-  border-bottom: solid .0625rem #e1e1e1;
+  border-bottom: solid 0.0625rem #e1e1e1;
   cursor: pointer;
 }
-.ayin-yazilari-grid .grid-item img{
- 
+.ayin-yazilari-grid .grid-item img {
   width: 5rem;
   height: 4.375rem;
   height: 100%;
   object-fit: cover;
   border-radius: 5%;
 }
-.ayin-yazilari-grid .grid-item:hover{
+.ayin-yazilari-grid .grid-item:hover {
   transform: scale(1.01);
 }
 
-.ayin-yazilari-grid .grid-item h2{
+.ayin-yazilari-grid .grid-item h2 {
   font-size: 1.15rem;
   margin-left: 10px;
 }
-.ayin-yazilari-grid .grid-item span{
+.ayin-yazilari-grid .grid-item span {
   color: #6a6d78;
   font-size: 1.15rem;
   margin: 0;
   margin-left: 10px;
 }
-.ayin-yazilari-grid .grid-item a>h2{
-  transition: color .4s ease;
+.ayin-yazilari-grid .grid-item a > h2 {
+  transition: color 0.4s ease;
 }
-.ayin-yazilari-grid .grid-item a>h2:hover{
-  color: gray ;
+.ayin-yazilari-grid .grid-item a > h2:hover {
+  color: gray;
 }
 /*! Ayın Yazıları End */
-
 
 /* Menü Start */
 
@@ -638,8 +623,10 @@ h5 {
 
 /* Responsive Start*/
 @media screen and (max-width: 1280.99px) {
-  .slider-wrapper-body,.container {
+  .slider-wrapper-body,.container,
+  .blog,.trend-haber-wrapper {
     overflow-x: hidden;
+    scroll-behavior: none;
   }
   .navbar-items {
     display: none;
@@ -647,9 +634,9 @@ h5 {
   .menu-open {
     width: 50%;
   }
-
+  
   .haber {
-    width: 105%;
+    width: 100%;
   }
 
   .wrapper {
@@ -676,35 +663,28 @@ h5 {
   }
 }
 @media screen and (max-width: 1024px) {
- 
-  .ana-sayfa-resim-wrapper {
+  .ayin-yazilari-wrapper {
+    margin-left: 8px;
+  }
+  .ayin-yazilari-grid {
+    width: 95%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 5rem);
+  }
+
+
+
+.trend-haber-wrapper {
+    margin-left: 8px;
+  }
+  .trend-haber-grid{
     width: 100%;
   }
 
-  .kucuk-haberler .kucuk-haber-row-1,
-  .kucuk-haber-row-2 {
-    width: 99dvw;
-    height: 17.8125rem;
-    margin-left: 0 !important;
-  }
-  .trend-haberler-wrapper {
+
+
+  .ana-sayfa-resim-wrapper {
     width: 100%;
-    height: 150vh;
-  }
-  .trend-haberler {
-    flex-direction: column;
-  }
-  .kucuk-haberler {
-    margin-top: 1rem;
-    width: 100% !important;
-  }
-  .kucuk-haber h2 {
-    width: 60% !important;
-    padding: 0px !important;
-  }
-  .buyuk-haber {
-    width: 94dvw;
-    height: 60dvw;
   }
 
   .info-button,
@@ -749,13 +729,7 @@ h5 {
   .menu-open {
     width: 50%;
   }
-  .buyuk-haber {
-    height: 50vh;
-    width: 93%;
-  }
-  .kucuk-haberler {
-    width: 100dvw !important;
-  }
+
   .ana-sayfa-resim-wrapper {
     padding-bottom: 30px;
   }
@@ -789,60 +763,33 @@ h5 {
   .slide-wrapper .carousel {
     grid-auto-columns: calc((100% / 1) + 45px);
   }
-  .kucuk-haberler .kucuk-haber-row-1 {
-    /* Todo  */
-    margin-bottom: auto !important;
-  }
 }
 @media screen and (max-width: 568px) {
-  .buyuk-haber {
-    width: 88%;
-  }
-
-  .buyuk-haber h2 {
-    font-size: 1.5rem;
-    width: 100%;
-  }
-  .kucuk-haber h2 {
-    font-size: 1rem;
-    width: 200px !important;
-  }
-
-  .kucuk-haberler .kucuk-haber-row-1,
-  .kucuk-haber-row-2 {
-    height: 31rem;
-    margin-bottom: -1px;
-    margin-top: 30px;
-    flex-direction: column;
-    width: 86dvw;
-  }
-
-  .trend-haberler-baslik {
-    margin-left: 2px;
-  }
-  .trend-haberler-wrapper {
-    width: 100%;
-    margin-left: 14px;
-  }
   .slide-baslik-h2 {
     font-size: 1.5rem;
   }
-  .trend-haberler-baslik h2 {
-    font-size: 1.5rem;
+  
+  .trend-haber-grid {
+    width: 104%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(12, 6rem);
   }
-  .trend-haberler {
-    height: 200vh;
+  .trend-grid-item:first-child {
+    grid-area:  1 / 1 / 5 / 4;
   }
-  .kucuk-haberler {
-    margin-top: 1px;
+   .trend-grid-item:nth-child(2) {
+    grid-area: span 2 / 1 / 7 / 4;
+  } 
+   .trend-grid-item:nth-child(3) {
+    grid-area: span 2 / 1 / 9 / 4;
   }
-  .kucuk-haber {
-    height: 30vh;
-
-    margin-top: 6px;
-    margin-bottom: 0 !important;
-    padding-bottom: 0px !important;
+  
+  .trend-grid-item:nth-child(4) {
+    grid-area: span 2 / 1 / 11 / 4;
   }
+  .trend-grid-item:nth-child(5) {
+    grid-area: span 2 / 1 / 13 / 4;
+  }    
 
   .menu-open {
     width: 100% !important;
@@ -869,10 +816,6 @@ h5 {
   /* .carousel .card{
     width: 18.75rem;
   } */
-  
- .trend-haberler .buyuk-haber{
-  margin-top: .9375rem;
- }
   .ana-sayfa-resim-baslik {
     margin-top: 35px;
     padding-top: 0;
@@ -884,22 +827,8 @@ h5 {
     margin-top: 150px;
     padding-top: 0 !important;
   }
-  .buyuk-haber {
-    width: 82dvw;
-    
+  .haber{
+    width: 105%;
   }
-  .kucuk-haberler .kucuk-haber-row-1,
-  .kucuk-haber-row-2 {
-    width: 87dvw;
-    height: 60vh;
-  }
-   .kucuk-haberler .kucuk-haber-row-1{
-    margin-bottom: -1.8125rem !important;
-    margin-top: 0;
-  } 
-  .kucuk-haber h2 {
-    font-size: 0.9rem;
-  }
-  
 }
 /* Responsive end */

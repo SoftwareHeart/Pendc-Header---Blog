@@ -276,7 +276,9 @@ h5 {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  margin-top: -3px;
+  margin-top: -7px;
+  gap: 3px;
+  font-size: 1.05rem;
 }
 
 .ana-sayfa-resim-baslik {
@@ -316,7 +318,7 @@ h5 {
   font-size: 1.05rem;
   display: inline-flex;
   margin-left: 10px;
-  margin-top: 0px;
+  margin-top: 5px;
 }
 
 /* Ana Sayfa Son */
@@ -468,9 +470,6 @@ h5 {
   background-position: center;
   border-radius: 3%;
   cursor: pointer;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  -moz-transform: scale(1);
   transition: all 0.3s ease-in;
   -moz-transition: all 0.3s ease-in;
   -webkit-transition: all 0.3s ease-in;
@@ -613,6 +612,7 @@ h5 {
 .buyuk-slides-items{
   display: flex;
   flex-direction: row;
+  
   margin: 0;
   padding: 0;
 
@@ -730,6 +730,7 @@ h5 {
   display: flex;
   flex-direction: column;
   margin-left: 10px;
+  gap: 6px;
 }
 .buyuk-slide-icerik .ust-baslik .ust-baslik-resim img{
   width: 50px;
@@ -744,14 +745,16 @@ h5 {
 .buyuk-slide-icerik .ust-baslik .ust-baslik-tarih h2{
   color: #fff;
   font-size: 1.5rem;
-  margin-top: 5px;
 }
 
 .buyuk-slide-icerik .buyuk-slide-paragraf h2{
   margin-top: 8px;
   color: #fff;
+  opacity: 0;
 }
-
+.buyuk-slide-icerik .buyuk-slide-paragraf.active h2{
+  opacity: 1;
+}
 @keyframes next1{
   from{
     left: 0%;
@@ -848,7 +851,7 @@ h5 {
     scroll-behavior: none;
   }
   .buyuk-slide-baslik{
-    width: 100%;
+    width: 95%;
   }
   .navbar-items {
     display: none;

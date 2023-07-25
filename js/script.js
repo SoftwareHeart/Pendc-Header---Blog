@@ -122,12 +122,16 @@ let next = document.querySelector('.buttons-buyuk-slider .next');
 let prev = document.querySelector('.buttons-buyuk-slider .prev');
 //Acces the dots
 let dots = document.querySelectorAll('.dot');
+let paragraf = document.querySelectorAll('.buyuk-slides .buyuk-slides-item .buyuk-slide-icerik .buyuk-slide-paragraf');
+//span
+
 
 var counter = 0;
 
 //Next Button
 next.addEventListener('click', slideNext);
 function slideNext() {
+   
     slideImages[counter].style.animation = 'next1 0.5s ease-in forwards';
     if(counter >= slideImages.length - 1) {
         counter = 0;
@@ -136,6 +140,7 @@ function slideNext() {
     }
     slideImages[counter].style.animation = 'next2 0.5s ease-in forwards';
     indicators();
+    
 }
 
 //Prev Button
@@ -149,17 +154,18 @@ function slidePrev() {
     }
     slideImages[counter].style.animation = 'prev2 0.5s ease-in forwards';
     indicators();
+
 }
 
 //Auto Slide
-function autoSlide() {
-    deletInterval = setInterval(timer, 3000);
-    function timer() {
-        slideNext();
-        indicators();
-    }
-}
-autoSlide();
+// function autoSlide() {
+//     deletInterval = setInterval(timer, 3000);
+//     function timer() {
+//         slideNext();
+//         indicators();
+//     }
+// }
+// autoSlide();
 
 //Stop Auto Slide
 const container = document.querySelector('.buyuk-slide-container');
@@ -174,8 +180,10 @@ container.addEventListener('mouseout',autoSlide);
 function indicators(){
     for(i=0; i< dots.length; i++){
         dots[i].className = dots[i].className.replace(' active', '');
+        paragraf[i].className = paragraf[i].className.replace(' active', '');
     }
     dots[counter].className += ' active';
+    paragraf[counter].className += ' active';
 }
 
 //Add click event to dots

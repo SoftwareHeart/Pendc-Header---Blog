@@ -1011,6 +1011,9 @@ h5 {
   .slide-baslik-h2 {
     font-size: 1.5rem;
   }
+  .buyuk-slide-baslik{
+    margin-left: 10px;
+  }
   .buyuk-slide-container {
     width: 95%;
     

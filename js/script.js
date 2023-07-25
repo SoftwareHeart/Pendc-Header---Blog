@@ -116,7 +116,7 @@ closeButton.addEventListener('click', function() {
 
 
 //Acces the Images
-let slideImages = document.querySelectorAll('.buyuk-slides img');
+let slideImages = document.querySelectorAll('.buyuk-slides .buyuk-slides-item #resim-1');
 //Acces the buttons
 let next = document.querySelector('.buttons-buyuk-slider .next');
 let prev = document.querySelector('.buttons-buyuk-slider .prev');
@@ -153,7 +153,7 @@ function slidePrev() {
 
 //Auto Slide
 function autoSlide() {
-    deletInterval = setInterval(timer, 3000);
+    deletInterval = setInterval(timer, 30000);
     function timer() {
         slideNext();
         indicators();

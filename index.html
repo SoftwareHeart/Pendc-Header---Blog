@@ -56,19 +56,25 @@
       </div>
     </div>
     <div class="menu">
-      <button class="close-button">&times;</button>
-      <ul class="menu-items">
-        <li><a href="#">Hizmetlerimiz</a></li>
-        <li><a href="#">Ayrıcalıklarımız</a></li>
-        <li><a href="#">Hakkımızda</a></li>
-        <li><a href="#">Kariyer</a></li>
-        <li><a href="#">SSS</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">İletişim</a></li>
-      </ul>
-      <div class="buttons-menu">
-        <button class="info-button">Bilgi Alın</button>
-        <button class="customer-button">Müşteri Paneli</button>
+      <div class="overlay"></div>
+      <div class="side-menu-content">
+        <button type="button" class="close">✕</button>
+        <nav>
+          <ul>
+            <li><a href="//www.pendc.com/hizmetlerimiz/">Hizmetlerimiz</a></li>
+            <li><a href="//www.pendc.com/ayricaliklarimiz/">Ayrıcalıklarımız</a></li>
+            <li><a href="//www.pendc.com/hakkimizda/">Hakkımızda</a></li>
+            <li><a href="//www.pendc.com/kariyer/">Kariyer</a></li>
+            <li><a href="//www.pendc.com/sikca-sorulan-sorular/">SSS</a></li>
+            <li><a href="//www.pendc.com/iletisim/">İletişim</a></li>
+            <li class="info-btn">
+              <a href="//www.pendc.com/iletisim/" title="Bilgi Alın">Bilgi Alın</a>
+            </li>
+            <li class="info-btn">
+              <a href="https://musteri.pendc.com">Müşteri Paneli</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
   </header>
@@ -382,28 +388,10 @@
         <div class="buyuk-slides">
           <ul class="buyuk-slides-items">
             <li class="buyuk-slides-item">
-              <img src="https://wp.widewallpapers.net/4k/computers/servers/2560x1600/datacenter-servers-2560x1600-002.jpg" alt="resim"
-                class="buyuk-slides-img-active" id="resim-1">
-                <div class="buyuk-slide-icerik" >
-                  <div class="ust-baslik">
-                    <div class="ust-baslik-resim">
-                      <img src="images/bulutistan.jpg" alt="resim">
-                    </div>
-                    <div class="ust-baslik-tarih">
-                      <span>Bulutistan</span>
-                      <span>25 Temmuz 2023</span>
-                    </div>
-                  </div>
-                  <div class="buyuk-slide-paragraf active">
-                    <span>Bulut</span>
-                    <h2>Bulut Ağı Nedir? İşletmelere Nasıl Fayda Sağlar? 1</h2>
-                  </div>
-                </div>
-            </li>
-            <li class="buyuk-slides-item">
-              <img src="https://www.techspot.com/images2/news/bigimage/2022/07/2022-07-01-image-5.jpg" alt="resim"
-               id="resim-1" >
-               <div class="buyuk-slide-icerik" >
+              <img
+                src="https://wp.widewallpapers.net/4k/computers/servers/2560x1600/datacenter-servers-2560x1600-002.jpg"
+                alt="resim" class="buyuk-slides-img-active" id="resim-1">
+              <div class="buyuk-slide-icerik">
                 <div class="ust-baslik">
                   <div class="ust-baslik-resim">
                     <img src="images/bulutistan.jpg" alt="resim">
@@ -413,67 +401,82 @@
                     <span>25 Temmuz 2023</span>
                   </div>
                 </div>
-                <div class="buyuk-slide-paragraf">
+                <div class="buyuk-slide-paragraf active">
                   <span>Bulut</span>
+                  <h2>Bulut Ağı Nedir? İşletmelere Nasıl Fayda Sağlar? 1</h2>
+                  <h2 id="h2-span">Ağ oluşturma, cihazları birbirine bağlayan, sistemleri coğrafi konumlar arasında
+                    entegre eden ve bilgilerin güvenli bir şekilde aktarılmasını sağlayan bir süreçtir. En önemli
+                    süreçlerden biri...</h2>
+                </div>
+              </div>
+            </li>
+            <li class="buyuk-slides-item">
+              <img src="https://www.techspot.com/images2/news/bigimage/2022/07/2022-07-01-image-5.jpg" alt="resim"
+                id="resim-1">
+              <div class="buyuk-slide-icerik">
+                <div class="ust-baslik">
+                </div>
+                <div class="buyuk-slide-paragraf">
                   <h2>Bulut Ağı Nedir? İşletmelere Nasıl Fayda Sağlar? 2</h2>
+                  <h2 id="h2-span">Ağ oluşturma, cihazları birbirine bağlayan, sistemleri coğrafi konumlar arasında
+                    entegre eden ve bilgilerin güvenli bir şekilde aktarılmasını sağlayan bir süreçtir. En önemli
+                    süreçlerden biri2...</h2>
                 </div>
               </div>
             </li>
             <li class="buyuk-slides-item">
               <img src="https://bitcoinist.com/wp-content/uploads/2017/10/is-cloud-cover.jpg" alt="resim" id="resim-1">
-              <div class="buyuk-slide-icerik" >
+              <div class="buyuk-slide-icerik">
                 <div class="ust-baslik">
-                  <div class="ust-baslik-resim">
-                    <img src="images/bulutistan.jpg" alt="resim">
-                  </div>
-                  <div class="ust-baslik-tarih">
-                    <span>Bulutistan</span>
-                    <span>25 Temmuz 2023</span>
-                  </div>
+
                 </div>
                 <div class="buyuk-slide-paragraf">
-                  <span>Bulut</span>
+
                   <h2>Bulut Ağı Nedir? İşletmelere Nasıl Fayda Sağlar? 3</h2>
+                  <h2 id="h2-span">Ağ oluşturma, cihazları birbirine bağlayan, sistemleri coğrafi konumlar arasında
+                    entegre eden ve bilgilerin güvenli bir şekilde aktarılmasını sağlayan bir süreçtir. En önemli
+                    süreçlerden biri3...</h2>
                 </div>
               </div>
             </li>
             <li class="buyuk-slides-item">
               <img src="https://cafe-dc.com/wp-content/uploads/2017/08/shutterstock_1319513717.jpg" alt="resim"
                 id="resim-1">
-                <div class="buyuk-slide-icerik" >
-                  <div class="ust-baslik">
-                    <div class="ust-baslik-resim">
-                      <img src="images/bulutistan.jpg" alt="resim">
-                    </div>
-                    <div class="ust-baslik-tarih">
-                      <span>Bulutistan</span>
-                      <span>25 Temmuz 2023</span>
-                    </div>
-                  </div>
-                  <div class="buyuk-slide-paragraf">
-                    <span>Bulut</span>
-                    <h2>Bulut Ağı Nedir? İşletmelere Nasıl Fayda Sağlar? 4</h2>
-                  </div>
+              <div class="buyuk-slide-icerik">
+                <div class="ust-baslik">
+
                 </div>
+                <div class="buyuk-slide-paragraf">
+
+                  <h2>Bulut Ağı Nedir? İşletmelere Nasıl Fayda Sağlar? 4</h2>
+                  <h2 id="h2-span">Ağ oluşturma, cihazları birbirine bağlayan, sistemleri coğrafi konumlar arasında
+                    entegre eden ve bilgilerin güvenli bir şekilde aktarılmasını sağlayan bir süreçtir. En önemli
+                    süreçlerden biri4...</h2>
+                </div>
+              </div>
             </li>
             <li class="buyuk-slides-item">
               <img src="https://i.pinimg.com/originals/6c/96/10/6c96100eace7e50130f43af46e6b0b5d.jpg" alt="resim"
                 id="resim-1">
-                <div class="buyuk-slide-icerik" >
-                  <div class="ust-baslik">
-                    <div class="ust-baslik-resim">
-                      <img src="images/bulutistan.jpg" alt="resim">
-                    </div>
-                    <div class="ust-baslik-tarih">
-                      <span>Bulutistan</span>
-                      <span>25 Temmuz 2023</span>
-                    </div>
+              <div class="buyuk-slide-icerik">
+                <div class="ust-baslik">
+                  <div class="ust-baslik-resim">
+                    <img src="images/bulutistan.jpg" alt="resim">
                   </div>
-                  <div class="buyuk-slide-paragraf">
-                    <span>Bulut</span>
-                    <h2>Bulut Ağı Nedir? İşletmelere Nasıl Fayda Sağlar? 5</h2>
+                  <!--!Tarih değiştirmek için burayı kullan-->
+                  <div class="ust-baslik-tarih">
+                    <span>Bulutistan</span>
+                    <span>25 Temmuz 2023</span>
                   </div>
                 </div>
+                <div class="buyuk-slide-paragraf">
+                  <span>Bulut</span>
+                  <h2>Bulut Ağı Nedir? İşletmelere Nasıl Fayda Sağlar? 5</h2>
+                  <h2 id="h2-span">Ağ oluşturma, cihazları birbirine bağlayan, sistemleri coğrafi konumlar arasında
+                    entegre eden ve bilgilerin güvenli bir şekilde aktarılmasını sağlayan bir süreçtir. En önemli
+                    süreçlerden biri5...</h2>
+                </div>
+              </div>
             </li>
           </ul>
 
@@ -499,8 +502,252 @@
     </div>
   </div>
 
-  <div style="height: 300px;"></div>
-
+  <div class="container">
+    <div class="en-son-yazilar-wrapper">
+      <div class="en-son-yazilar-sol">
+        <div class="en-son-yazilar-baslik">
+          <span>Daha Fazlası</span>
+          <h2>En Son Yazılan Yazılar</h2>
+        </div>
+        <div class="en-son-yazilar-grid-sol">
+          <div class="en-son-yazilar-grid-sol-item">
+            <a href="#"><img src="https://wp.widewallpapers.net/4k/computers/servers/2560x1600/datacenter-servers-2560x1600-002.jpg" alt="resim"></a>
+            <span class="alt-title">Al (Yapay Zeka)</span>
+            <h2><a href="#">Sesi Yazıya Çevirme Nedir, Neden Önemlidir? OpenAl'ın Yeni Konuşmayı Anlama ve Metne Çevirme Sistemi: Whisper</a></h2>
+            <span>Son yıllarda en popüler teknolojilerden biri konuşma tanıma olmuştur. Bu, çok çeşitli…</span>
+            <div class="en-son-yazilar-grid-sol-item-alt">
+              <div class="en-son-yazilar-grid-sol-item-alt-tarih">
+                <div class="en-son-yazilar-grid-sol-item-alt-tarih-resim">
+                  <img src="images/bulutistan.jpg" alt="resim">
+                  <div class="en-son-yazilar-grid-sol-item-alt-tarih-baslik">
+                    <span><a href="#">Bulutistan</a></span>
+                  <span>26 Temmuz 2023</span>
+                  </div>
+                </div>
+              </div>
+              <div class="en-son-yazilar-grid-sol-item-alt-button">
+                <a href="#">Devamını Oku</a>
+              </div>
+            </div>
+          </div>
+          <div class="en-son-yazilar-grid-sol-item">
+            <a href="#"><img src="https://wp.widewallpapers.net/4k/computers/servers/2560x1600/datacenter-servers-2560x1600-002.jpg" alt="resim"></a>
+            <span class="alt-title">Al (Yapay Zeka)</span>
+            <h2><a href="#">Sesi Yazıya Çevirme Nedir, Neden Önemlidir? OpenAl'ın Yeni Konuşmayı Anlama ve Metne Çevirme Sistemi: Whisper</a></h2>
+            <span>Son yıllarda en popüler teknolojilerden biri konuşma tanıma olmuştur. Bu, çok çeşitli…</span>
+            <div class="en-son-yazilar-grid-sol-item-alt">
+              <div class="en-son-yazilar-grid-sol-item-alt-tarih">
+                <div class="en-son-yazilar-grid-sol-item-alt-tarih-resim">
+                  <img src="images/bulutistan.jpg" alt="resim">
+                  <div class="en-son-yazilar-grid-sol-item-alt-tarih-baslik">
+                    <span><a href="#">Bulutistan</a></span>
+                  <span>26 Temmuz 2023</span>
+                  </div>
+                </div>
+              </div>
+              <div class="en-son-yazilar-grid-sol-item-alt-button">
+                <a href="#">Devamını Oku</a>
+              </div>
+            </div>
+          </div>
+          <div class="en-son-yazilar-grid-sol-item">
+            <a href="#"><img src="https://wp.widewallpapers.net/4k/computers/servers/2560x1600/datacenter-servers-2560x1600-002.jpg" alt="resim"></a>
+            <span class="alt-title">Al (Yapay Zeka)</span>
+            <h2><a href="#">Sesi Yazıya Çevirme Nedir, Neden Önemlidir? OpenAl'ın Yeni Konuşmayı Anlama ve Metne Çevirme Sistemi: Whisper</a></h2>
+            <span>Son yıllarda en popüler teknolojilerden biri konuşma tanıma olmuştur. Bu, çok çeşitli…</span>
+            <div class="en-son-yazilar-grid-sol-item-alt">
+              <div class="en-son-yazilar-grid-sol-item-alt-tarih">
+                <div class="en-son-yazilar-grid-sol-item-alt-tarih-resim">
+                  <img src="images/bulutistan.jpg" alt="resim">
+                  <div class="en-son-yazilar-grid-sol-item-alt-tarih-baslik">
+                    <span><a href="#">Bulutistan</a></span>
+                  <span>26 Temmuz 2023</span>
+                  </div>
+                </div>
+              </div>
+              <div class="en-son-yazilar-grid-sol-item-alt-button">
+                <a href="#">Devamını Oku</a>
+              </div>
+            </div>
+          </div>
+          <div class="en-son-yazilar-grid-sol-item">
+            <a href="#"><img src="https://wp.widewallpapers.net/4k/computers/servers/2560x1600/datacenter-servers-2560x1600-002.jpg" alt="resim"></a>
+            <span class="alt-title">Al (Yapay Zeka)</span>
+            <h2><a href="#">Sesi Yazıya Çevirme Nedir, Neden Önemlidir? OpenAl'ın Yeni Konuşmayı Anlama ve Metne Çevirme Sistemi: Whisper</a></h2>
+            <span>Son yıllarda en popüler teknolojilerden biri konuşma tanıma olmuştur. Bu, çok çeşitli…</span>
+            <div class="en-son-yazilar-grid-sol-item-alt">
+              <div class="en-son-yazilar-grid-sol-item-alt-tarih">
+                <div class="en-son-yazilar-grid-sol-item-alt-tarih-resim">
+                  <img src="images/bulutistan.jpg" alt="resim">
+                  <div class="en-son-yazilar-grid-sol-item-alt-tarih-baslik">
+                    <span><a href="#">Bulutistan</a></span>
+                  <span>26 Temmuz 2023</span>
+                  </div>
+                </div>
+              </div>
+              <div class="en-son-yazilar-grid-sol-item-alt-button">
+                <a href="#">Devamını Oku</a>
+              </div>
+            </div>
+          </div>
+          <div class="en-son-yazilar-grid-sol-item">
+            <a href="#"><img src="https://wp.widewallpapers.net/4k/computers/servers/2560x1600/datacenter-servers-2560x1600-002.jpg" alt="resim"></a>
+            <span class="alt-title">Al (Yapay Zeka)</span>
+            <h2><a href="#">Sesi Yazıya Çevirme Nedir, Neden Önemlidir? OpenAl'ın Yeni Konuşmayı Anlama ve Metne Çevirme Sistemi: Whisper</a></h2>
+            <span>Son yıllarda en popüler teknolojilerden biri konuşma tanıma olmuştur. Bu, çok çeşitli…</span>
+            <div class="en-son-yazilar-grid-sol-item-alt">
+              <div class="en-son-yazilar-grid-sol-item-alt-tarih">
+                <div class="en-son-yazilar-grid-sol-item-alt-tarih-resim">
+                  <img src="images/bulutistan.jpg" alt="resim">
+                  <div class="en-son-yazilar-grid-sol-item-alt-tarih-baslik">
+                    <span><a href="#">Bulutistan</a></span>
+                  <span>26 Temmuz 2023</span>
+                  </div>
+                </div>
+              </div>
+              <div class="en-son-yazilar-grid-sol-item-alt-button">
+                <a href="#">Devamını Oku</a>
+              </div>
+            </div>
+          </div>
+          <div class="en-son-yazilar-grid-sol-item">
+            <a href="#"><img src="https://wp.widewallpapers.net/4k/computers/servers/2560x1600/datacenter-servers-2560x1600-002.jpg" alt="resim"></a>
+            <span class="alt-title">Al (Yapay Zeka)</span>
+            <h2><a href="#">Sesi Yazıya Çevirme Nedir, Neden Önemlidir? OpenAl'ın Yeni Konuşmayı Anlama ve Metne Çevirme Sistemi: Whisper</a></h2>
+            <span>Son yıllarda en popüler teknolojilerden biri konuşma tanıma olmuştur. Bu, çok çeşitli…</span>
+            <div class="en-son-yazilar-grid-sol-item-alt">
+              <div class="en-son-yazilar-grid-sol-item-alt-tarih">
+                <div class="en-son-yazilar-grid-sol-item-alt-tarih-resim">
+                  <img src="images/bulutistan.jpg" alt="resim">
+                  <div class="en-son-yazilar-grid-sol-item-alt-tarih-baslik">
+                    <span><a href="#">Bulutistan</a></span>
+                  <span>26 Temmuz 2023</span>
+                  </div>
+                </div>
+              </div>
+              <div class="en-son-yazilar-grid-sol-item-alt-button">
+                <a href="#">Devamını Oku</a>
+              </div>
+            </div>
+          </div>
+          <div class="en-son-yazilar-grid-sol-item">
+            <a href="#"><img src="https://wp.widewallpapers.net/4k/computers/servers/2560x1600/datacenter-servers-2560x1600-002.jpg" alt="resim"></a>
+            <span class="alt-title">Al (Yapay Zeka)</span>
+            <h2><a href="#">Sesi Yazıya Çevirme Nedir, Neden Önemlidir? OpenAl'ın Yeni Konuşmayı Anlama ve Metne Çevirme Sistemi: Whisper</a></h2>
+            <span>Son yıllarda en popüler teknolojilerden biri konuşma tanıma olmuştur. Bu, çok çeşitli…</span>
+            <div class="en-son-yazilar-grid-sol-item-alt">
+              <div class="en-son-yazilar-grid-sol-item-alt-tarih">
+                <div class="en-son-yazilar-grid-sol-item-alt-tarih-resim">
+                  <img src="images/bulutistan.jpg" alt="resim">
+                  <div class="en-son-yazilar-grid-sol-item-alt-tarih-baslik">
+                    <span><a href="#">Bulutistan</a></span>
+                  <span>26 Temmuz 2023</span>
+                  </div>
+                </div>
+              </div>
+              <div class="en-son-yazilar-grid-sol-item-alt-button">
+                <a href="#">Devamını Oku</a>
+              </div>
+            </div>
+          </div>
+          <div class="en-son-yazilar-grid-sol-item">
+            <a href="#"><img src="https://wp.widewallpapers.net/4k/computers/servers/2560x1600/datacenter-servers-2560x1600-002.jpg" alt="resim"></a>
+            <span class="alt-title">Al (Yapay Zeka)</span>
+            <h2><a href="#">Sesi Yazıya Çevirme Nedir, Neden Önemlidir? OpenAl'ın Yeni Konuşmayı Anlama ve Metne Çevirme Sistemi: Whisper</a></h2>
+            <span>Son yıllarda en popüler teknolojilerden biri konuşma tanıma olmuştur. Bu, çok çeşitli…</span>
+            <div class="en-son-yazilar-grid-sol-item-alt">
+              <div class="en-son-yazilar-grid-sol-item-alt-tarih">
+                <div class="en-son-yazilar-grid-sol-item-alt-tarih-resim">
+                  <img src="images/bulutistan.jpg" alt="resim">
+                  <div class="en-son-yazilar-grid-sol-item-alt-tarih-baslik">
+                    <span><a href="#">Bulutistan</a></span>
+                  <span>26 Temmuz 2023</span>
+                  </div>
+                </div>
+              </div>
+              <div class="en-son-yazilar-grid-sol-item-alt-button">
+                <a href="#">Devamını Oku</a>
+              </div>
+            </div>
+          </div>
+          <div class="en-son-yazilar-grid-sol-item">
+            <a href="#"><img src="https://wp.widewallpapers.net/4k/computers/servers/2560x1600/datacenter-servers-2560x1600-002.jpg" alt="resim"></a>
+            <span class="alt-title">Al (Yapay Zeka)</span>
+            <h2><a href="#">Sesi Yazıya Çevirme Nedir, Neden Önemlidir? OpenAl'ın Yeni Konuşmayı Anlama ve Metne Çevirme Sistemi: Whisper</a></h2>
+            <span>Son yıllarda en popüler teknolojilerden biri konuşma tanıma olmuştur. Bu, çok çeşitli…</span>
+            <div class="en-son-yazilar-grid-sol-item-alt">
+              <div class="en-son-yazilar-grid-sol-item-alt-tarih">
+                <div class="en-son-yazilar-grid-sol-item-alt-tarih-resim">
+                  <img src="images/bulutistan.jpg" alt="resim">
+                  <div class="en-son-yazilar-grid-sol-item-alt-tarih-baslik">
+                    <span><a href="#">Bulutistan</a></span>
+                  <span>26 Temmuz 2023</span>
+                  </div>
+                </div>
+              </div>
+              <div class="en-son-yazilar-grid-sol-item-alt-button">
+                <a href="#">Devamını Oku</a>
+              </div>
+            </div>
+          </div>
+          <div class="en-son-yazilar-grid-sol-item">
+            <a href="#"><img src="https://wp.widewallpapers.net/4k/computers/servers/2560x1600/datacenter-servers-2560x1600-002.jpg" alt="resim"></a>
+            <span class="alt-title">Al (Yapay Zeka)</span>
+            <h2><a href="#">Sesi Yazıya Çevirme Nedir, Neden Önemlidir? OpenAl'ın Yeni Konuşmayı Anlama ve Metne Çevirme Sistemi: Whisper</a></h2>
+            <span>Son yıllarda en popüler teknolojilerden biri konuşma tanıma olmuştur. Bu, çok çeşitli…</span>
+            <div class="en-son-yazilar-grid-sol-item-alt">
+              <div class="en-son-yazilar-grid-sol-item-alt-tarih">
+                <div class="en-son-yazilar-grid-sol-item-alt-tarih-resim">
+                  <img src="images/bulutistan.jpg" alt="resim">
+                  <div class="en-son-yazilar-grid-sol-item-alt-tarih-baslik">
+                    <span><a href="#">Bulutistan</a></span>
+                  <span>26 Temmuz 2023</span>
+                  </div>
+                </div>
+              </div>
+              <div class="en-son-yazilar-grid-sol-item-alt-button">
+                <a href="#">Devamını Oku</a>
+              </div>
+            </div>
+          </div>
+         
+          
+      </div>
+      <div class="yukleniyor-button">
+        <a href="#">Yükleniyor</a></div>
+    </div>
+      <div class="en-son-yazilar-sag">
+        <div class="en-son-yazilar-baslik">
+          <span>Populer Yazılar</span>
+          <h2>Bunları Okumalısınız</h2>
+        </div>
+        <div class="en-son-yazilar-grid-sag">
+          <div class="en-son-yazilar-grid-sag-item">
+            <img src="images/cloud-network.png" alt="resim">
+            <span>1</span>
+            <h2><a href="#">Bulut Güvenliği Nedir?</a></h2>
+          </div>
+          <div class="en-son-yazilar-grid-sag-item">
+            <img src="images/cloud-network.png" alt="resim">
+            <span>2</span>
+            <h2><a href="#">Bulut Güvenliği Nedir?</a></h2>
+          </div>
+          <div class="en-son-yazilar-grid-sag-item">
+            <img src="images/cloud-network.png" alt="resim">
+            <span>3</span>
+            <h2><a href="#">Bulut Güvenliği Nedir?</a></h2>
+          </div>
+          <div class="en-son-yazilar-grid-sag-item">
+            <img src="images/cloud-network.png" alt="resim">
+            <span>4</span>
+            <h2><a href="#">Bulut Güvenliği Nedir?</a></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+  
 
   <script src="js/script.js"></script>
 </body>

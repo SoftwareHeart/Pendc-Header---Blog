@@ -209,3 +209,20 @@ function switchImage(currentImage) {
   }
   indicators();
 }
+
+
+window.onscroll = function() { scrollFunction() };
+
+        function scrollFunction() {
+            var goTopBtn = document.getElementById("go-top");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                goTopBtn.classList.add("show");
+            } else {
+                goTopBtn.classList.remove("show");
+            }
+        }
+
+        function goToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }

@@ -842,11 +842,17 @@ h5 {
     height: 18rem;
     object-fit: cover;
     border-radius: 5%;
+    transition: transform 0.4s ease-in-out;
+  }
+  .en-son-yazilar-grid-sol-item img:hover{
+    transform: scale(1.02);
   }
   .en-son-yazilar-grid-sol-item h2{
+    display: flex;
     margin-top: 8px;
+    align-items: center;
     font-size: 1.15rem;
-    height: 5rem;
+    
   }
   .en-son-yazilar-grid-sol-item .alt-title{
     color: blue;
@@ -918,6 +924,7 @@ h5 {
  }
 
 .en-son-yazilar-sag{
+  width: 100%;
   margin-left: 2%;
 }
   .en-son-yazilar-grid-sag{
@@ -957,6 +964,31 @@ h5 {
 }
 /*! En Son Yazılar End */
 
+#go-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 999;
+  transform: translateY(80px);
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+#go-top span{
+  color: gray;
+  font-size: 1rem;
+}
+#go-top.show {
+  opacity: 1;
+  pointer-events: initial;
+  transform: translateY(0);
+}
 /*! Footer Start */
   
 /*! Footer End */
@@ -966,7 +998,7 @@ h5 {
 
 
 /* Responsive Start*/
-@media screen and (max-width: 1199.99px) {
+@media screen and (max-width: 1280.99px) {
 
  
   .ana-sayfa-resim-wrapper {
@@ -1138,7 +1170,9 @@ h5 {
   }
 }
 @media screen and (max-width: 1024px) {
-  
+  #go-top.show{
+    opacity: 0;
+  }
   .ayin-yazilari-wrapper {
     margin-left: 8px;
   }
@@ -1197,7 +1231,9 @@ h5 {
   }
 
  
-
+  .en-son-yazilar-wrapper{
+    margin-left: 8px;
+  }
   .ana-sayfa-sag-yazi {
     justify-content: start;
   }

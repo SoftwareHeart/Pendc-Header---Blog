@@ -210,7 +210,7 @@ function switchImage(currentImage) {
   indicators();
 }
 
-
+//Üste Çıkma Butonu
 window.onscroll = function() { scrollFunction() };
 
         function scrollFunction() {

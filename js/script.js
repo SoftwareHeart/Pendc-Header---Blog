@@ -4,7 +4,7 @@ const firstCardWidth = carousel.querySelector(".card").offsetWidth;
 const arrowBtns = document.querySelectorAll(".slide-wrapper i");
 const carouselChildrens = [...carousel.children];
 
-let isDragging = false,
+let isDragging = false, // Flag to check if the user is dragging the carousel
   isAutoPlay = true,
   startX,
   startScrollLeft,
@@ -104,9 +104,16 @@ window.addEventListener("scroll", function () {
   }
 });
 
+/* Adds a dragStart event listener to the carousel */
 carousel.addEventListener("mousedown", dragStart);
-carousel.addEventListener("mousemove", dragging);
+
+/* Adds a dragStop event listener to the document */
 document.addEventListener("mouseup", dragStop);
+
+/* Adds a dragging event listener to the carousel */
+carousel.addEventListener("mousemove", dragging);
+
+/* Adds an infiniteScroll event listener to the carousel */
 carousel.addEventListener("scroll", infiniteScroll);
 
 var menuButton = document.querySelector(".menu-button");

@@ -1,6 +1,4 @@
-* {
-  font-family: "Rubik", sans-serif;
-}
+
 ::selection {
   background-color: #f27405;
   color: white;
@@ -38,7 +36,7 @@ li {
 /* Header start */
 
 .header-sticky {
-  height: 69px !important;
+  height: 65px ;
   .contact {
     display: none;
   }
@@ -937,7 +935,7 @@ h5 {
 }
 .en-son-yazilar-grid-sag {
   position: sticky;
-  top: 50px;
+  top: 40px;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 1.3rem;
@@ -1008,10 +1006,12 @@ footer ul {
 }
 footer {
   margin-top: 30px;
-
+  width: 100%;
+  height: auto;
   background-color: #1c1b1a;
   display: flex;
   flex-direction: column;
+ 
 }
 .footer-content {
   padding-top: 20px;
@@ -1080,6 +1080,7 @@ footer .footer-bottom a {
   height: 80px;
   margin-top: 60px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   width: 100%;
@@ -1236,6 +1237,12 @@ footer .footer-bottom a {
   .trend-haber-grid {
     width: 99%;
   }
+  .buyuk-slide-baslik{
+width: 95%;
+  }
+  .ayin-yazilari-wrapper{
+    width: 95%;
+  }
   .buyuk-slide-container {
     width: 95%;
   }
@@ -1341,10 +1348,11 @@ footer .footer-bottom a {
   .blog,
   .trend-haber-wrapper,
   .sticky-container,
-  footer {
+  footer,html {
     overflow-x: hidden;
     scroll-behavior: none;
   }
+  header
   .buyuk-slide-baslik {
     width: 95%;
   }
@@ -1372,6 +1380,7 @@ footer .footer-bottom a {
     height: 92%;
     margin-top: 4px;
   }
+  
 }
 @media screen and (max-width: 1100px) {
   .slide-wrapper .carousel {
@@ -1487,7 +1496,7 @@ footer .footer-bottom a {
     grid-auto-columns: calc((100% / 2) + 5px);
   }
 }
-@media screen and (max-width: 768.99px) {
+@media screen and (max-width: 767.98px) {
   #mail-icon {
     font-size: 0 !important;
   }
@@ -1565,10 +1574,7 @@ footer .footer-bottom a {
   .slide-baslik-h2 {
     font-size: 1.5rem;
   }
-  .footer-content {
-    padding-left: 8px;
-    width: 95%;
-  }
+  
   .buyuk-slide-icerik .buyuk-slide-paragraf #h2-span {
     font-size: 0.83rem;
     width: 100%;
@@ -1646,14 +1652,40 @@ footer .footer-bottom a {
     margin-top: 5px;
     width: 80%;
   }
+  .footer-content{
+    padding-left: 30px;
+  }
   .f-item-3 {
     padding-left: 0;
     margin-left: -40px;
+  }
+  .footer-bottom{
+    padding: 30px 0px 20px 0px;
+    flex-direction: column;
+    row-gap: 30px;
+    height: auto;
   }
   /*!Bakılacak  */
   /* .slider-wrapper-body{
     align-items: start;
     margin-left: -25px;
   } */
+}
+@media screen and (max-width: 368.99px) {
+  .haber-baslik h2{
+    font-size: 12px;
+  }
+  .en-son-yazilar-grid-sol-item-alt-button a{
+    font-size: .9rem;
+    padding: 10px 10px 10px 10px;
+  }
+  .f-buttons li {
+   width: 85%;
+  }
+  .footer-content .f-item-2{
+    width: 70% !important;
+  }
+ 
+ 
 }
 /* Responsive end */

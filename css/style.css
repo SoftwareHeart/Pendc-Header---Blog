@@ -934,8 +934,6 @@ h5 {
  
 }
 .en-son-yazilar-grid-sag {
-  position: sticky;
-  top: 40px;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 1.3rem;
@@ -943,7 +941,6 @@ h5 {
 }
 .en-son-yazilar-grid-sag-item {
   display: flex;
-  
   padding: 0px 20px 20px 0px;
   padding-left: 0;
   align-items: center;
@@ -1000,6 +997,74 @@ h5 {
   pointer-events: initial;
   transform: translateY(0);
 }
+/* İletisim Form Start */
+.sticky-container{
+  position: sticky;
+  top: 75px;
+  margin-top: 30px;
+}
+.iletisim-form{
+  
+  display: flex;
+  flex-direction: column;
+  
+  padding: 20px;
+  background-color: #363D4B;
+  border-radius: 5%;
+}
+.iletisim-form-baslik h2{
+  color: white;
+  text-align: center;
+  margin-bottom: 15px;
+} 
+.primary-button{
+  background-color: #f27405;
+  color: white;
+  width: 100%;
+    height: 3.5rem;
+    font-size: 1rem;
+    display: flex;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+.iletisim-form-input{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.iletisim-form-input .form-control{
+  display: block;
+  width: 90%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.375rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+ 
+}
+.riza-metni{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  column-gap: 3px;
+}
+.riza-metni span{
+  font-size: .8rem;
+  color: white;
+}
+/* İletisim Form End */
 /*! Footer Start */
 footer ul {
   padding: 0;
@@ -1192,7 +1257,7 @@ footer .footer-bottom a {
 .menu {
   display: none;
 }
-.sticky-container {
+.iletisim-button {
   display: flex;
   justify-content: space-between;
  
@@ -1215,9 +1280,17 @@ footer .footer-bottom a {
   color: #fff;
 }
 /* Responsive Start*/
+@media screen and (max-width: 1280.99px){
+  #go-top{
+   bottom: 10px;
+   right: 10px;
+  }
+}
 @media screen and (max-width: 1240.99px) {
-  
-
+  /* #go-top{} */
+  #go-top.show {
+    opacity: 0;
+  }
   .footer-content {
     padding-left: 150px;
   }
@@ -1249,9 +1322,7 @@ width: 95%;
   .en-son-yazilar-wrapper{
     width: 95%;
   }
-  .sticky-container{
-    display: none;
-  }
+ 
   /* Menü Start */
   .menu {
     display: block;
@@ -1386,8 +1457,9 @@ width: 95%;
   .slide-wrapper .carousel {
     grid-auto-columns: calc((100% / 3) + 5px);
   }
-  .sticky-container{
-    display: none;
+  .iletisim-form-input .form-control{
+    width: 95%;
+    
   }
   .en-son-yazilar-grid-sol-item {
     width: auto;
@@ -1405,10 +1477,13 @@ width: 95%;
   }
 }
 @media screen and (max-width: 1024px) {
-  #go-top.show {
-    opacity: 0;
-  }
+ 
   
+  .en-son-yazilar-sag{
+    margin: auto;
+    margin-left: 10px;
+    width: 95%;
+  }
   .en-son-yazilar-wrapper {
     margin-left: 16px;
   }
@@ -1496,7 +1571,7 @@ width: 95%;
     grid-auto-columns: calc((100% / 2) + 5px);
   }
 }
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 768.98px) {
   #mail-icon {
     font-size: 0 !important;
   }
@@ -1574,7 +1649,9 @@ width: 95%;
   .slide-baslik-h2 {
     font-size: 1.5rem;
   }
-  
+  .iletisim-form-input .form-control{
+    width: 92.4%;
+  }
   .buyuk-slide-icerik .buyuk-slide-paragraf #h2-span {
     font-size: 0.83rem;
     width: 100%;
@@ -1621,6 +1698,9 @@ width: 95%;
   }
 }
 @media screen and (max-width: 428.99px) {
+  .form-control{
+    width: 90% !important;
+  }
   .carousel .card {
     padding-right: 28px;
   }
